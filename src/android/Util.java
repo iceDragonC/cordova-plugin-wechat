@@ -55,7 +55,7 @@ public class Util {
             cacheDir = context.getCacheDir(); //get system cache folder
         }
 
-        return cacheDir;
+        return context.getApplicationContext().getCacheDir();
     }
 
     public static File downloadAndCacheFile(Context context, String url) {

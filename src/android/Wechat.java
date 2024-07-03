@@ -452,7 +452,7 @@ public class Wechat extends CordovaPlugin {
     protected WXMediaMessage buildSharingMessage(JSONObject params)
             throws JSONException {
         Log.d(TAG, "Start building message.");
-
+        Log.i("params===",params)
         // media parameters
         WXMediaMessage.IMediaObject mediaObject = null;
         WXMediaMessage wxMediaMessage = new WXMediaMessage();
@@ -671,9 +671,9 @@ public class Wechat extends CordovaPlugin {
             if (URLUtil.isHttpUrl(url) || URLUtil.isHttpsUrl(url)) {
 
                 if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
-                    if (!cordova.hasPermission(ANDROID_WRITE_EXTERNAL_STORAGE)) {
-                        cordova.requestPermission(this, REQUEST_CODE_ENABLE_PERMISSION, ANDROID_WRITE_EXTERNAL_STORAGE);
-                    }
+                    // if (!cordova.hasPermission(ANDROID_WRITE_EXTERNAL_STORAGE)) {
+                    //     cordova.requestPermission(this, REQUEST_CODE_ENABLE_PERMISSION, ANDROID_WRITE_EXTERNAL_STORAGE);
+                    // }
                 }
 
                 File file = Util.downloadAndCacheFile(webView.getContext(), url);
