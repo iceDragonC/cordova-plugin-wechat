@@ -452,7 +452,6 @@ public class Wechat extends CordovaPlugin {
     protected WXMediaMessage buildSharingMessage(JSONObject params)
             throws JSONException {
         Log.d(TAG, "Start building message.");
-        Log.i("params===",params)
         // media parameters
         WXMediaMessage.IMediaObject mediaObject = null;
         WXMediaMessage wxMediaMessage = new WXMediaMessage();

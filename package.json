@@ -1,6 +1,6 @@
 {
   "name": "@fubaobaoxian/cordova-plugin-wechat",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "A cordova plugin, a JS version of Wechat SDK",
   "cordova": {
     "id": "@fubaobaoxian/cordova-plugin-wechat",
@@ -42,5 +42,10 @@
   "bugs": {
     "url": "https://github.com/iceDragonC/cordova-plugin-wechat/issues"
   },
-  "homepage": "https://github.com/iceDragonC/cordova-plugin-wechat#readme"
+  "homepage": "https://github.com/iceDragonC/cordova-plugin-wechat#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
